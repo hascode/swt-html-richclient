@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>hasCode.com HTML-SWT-RichClient Example</title>
+		<title>hasCode.com HTML-SWT-RichClient Example 1</title>
 		<script type="text/javascript">
 		function passToFrame(){
 			var response = jsToSwtCallback(12345, 'there is no spoon');
@@ -10,10 +10,26 @@
 		</script>
 	</head>
 	<body>
-		<h1>HTML-SWT-RichClient Example</h1>
+		<h1>HTML-SWT-RichClient Example 1</h1>
 		<hr/>
+		<p>
+		A simple demo only using one html page. When clicking on the button, data will be passed over a callback function to the SWT java backend.
+		<br/>
+		The following function is triggered:<br/>
+		<blockquote><pre>
+function passToFrame(){
+	var response = jsToSwtCallback(12345, 'there is no spoon');
+	alert(response);
+	
+}
+		</pre></blockquote>
+		</p>
 		<input type="button" value="Callback to SWT Frame" onclick="javascript:passToFrame()"/>
 		<br/>
-		<em>2012 Micha Kops / hasCode.com</em>
+		<br/>
+		<a href="main-with-layout.html">Skip to next example..</a>
+		<hr/>
+		<br/>
+		<small>2012 Micha Kops / hasCode.com</small>
 	</body>
 </html>
